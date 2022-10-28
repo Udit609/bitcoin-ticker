@@ -50,7 +50,7 @@ class _PriceScreenState extends State<PriceScreen> {
       cryptoCards.add(CryptoCard(
           cryptoCurrency: crypto,
           selectedCurrency: selectedItem,
-          value: coinValues[crypto]!));
+          value: coinValues[crypto].toString()));
     }
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -78,7 +78,7 @@ class _PriceScreenState extends State<PriceScreen> {
               value: selectedItem,
               onChanged: (value) {
                 setState(() {
-                  selectedItem = value!;
+                  selectedItem = value.toString();
                   getCryptoData();
                 });
               },

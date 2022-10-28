@@ -1,5 +1,4 @@
 import 'dart:convert';
-import 'package:bitcoin_ticker/price_screen.dart';
 import 'package:http/http.dart' as http;
 
 const String apiKey = 'D12CC8C0-A95B-4C4E-8487-5195A04D2AD7';
